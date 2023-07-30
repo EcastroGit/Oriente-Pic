@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
+import Home from "./pages/Home.js";
+import Places from "./pages/Places.js";
+import Blog from "./pages/Blog.js";
+import Post1 from "./posts/Post1";
+import Post2 from "./posts/Post2";
+import About from "./pages/About.js";
+import OrienteInfo from "./pages/OrienteInfo";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/places" element={<Places />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/explorando-oriente" element={<Post1 />} />
+        <Route path="/blog/caminatas-ecologicas" element={<Post2 />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/oriente-antioqueño" element={<OrienteInfo />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+
+      <Footer />
     </div>
   );
 }
