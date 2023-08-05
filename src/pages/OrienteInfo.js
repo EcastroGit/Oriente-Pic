@@ -10,7 +10,7 @@ function OrienteInfo() {
         <title>Acerca del Oriente Antioqueño - Scenery</title>
         <meta
           name="description"
-          content="Descubre inforamción sobre la región del Oriente Antioqueño."
+          content="Descubre inforamción sobre la región del Oriente Antioqueño, Colombia."
         />
       </Helmet>
       <section>
@@ -25,7 +25,35 @@ function OrienteInfo() {
             Antioqueño. Esta región, ubicada al este de la ciudad de Medellín,
             la capital del departamento, cautiva a los aventureros, amantes de
             la naturaleza y curiosos culturales con una mezcla única de paisajes
-            impresionantes, pueblos encantadores y tradiciones arraigadas.
+            impresionantes, pueblos encantadores y tradiciones arraigadas. El
+            oriente antioqueño está conformado por las siguiente cuatro
+            subregiones:
+            <br />
+            <br />
+            <strong>Zona de altiplano:</strong>
+            <br />
+            <br />
+            El Carmen de Viboral, El Retiro, Santuario, Guarne, La Ceja,
+            Marinilla, La Unión, Rionegro y San Vicente.
+            <br />
+            <br />
+            <strong>Zona de embalses:</strong>
+            <br />
+            <br />
+            Alejandría, Concepción, El peñol, Granada, Guatapé, San Carlos y San
+            Rafael.
+            <br />
+            <br />
+            <strong>Zona de páramo:</strong>
+            <br />
+            <br />
+            Sonsón, Nariño, Argelia y Abejorral.
+            <br />
+            <br />
+            <strong>Zona de bosques:</strong>
+            <br />
+            <br />
+            Cocorná, San Francisco y San Luis.
           </p>
           <p>
             <br />
@@ -112,13 +140,13 @@ function OrienteInfo() {
             origen es una experiencia enriquecedora.
           </p>
           <p>
-          <br />
             <br />
-            El Oriente Antioqueño es una región colombiana que
-            combina paisajes impresionantes, encanto colonial, rica cultura y
-            tradiciones arraigadas. Es un destino ideal para aquellos que buscan
-            una experiencia auténtica y en contacto con la naturaleza, mientras
-            se deleitan con la calidez y hospitalidad de su gente. Visitar esta
+            <br />
+            El Oriente Antioqueño es una región colombiana que combina paisajes
+            impresionantes, encanto colonial, rica cultura y tradiciones
+            arraigadas. Es un destino ideal para aquellos que buscan una
+            experiencia auténtica y en contacto con la naturaleza, mientras se
+            deleitan con la calidez y hospitalidad de su gente. Visitar esta
             región es sumergirse en un rincón especial de Colombia que deja
             huella en el corazón de quienes la exploran.
           </p>
@@ -138,10 +166,10 @@ const OrienteInfoWrap = styled.div`
     width: 70%;
     margin: auto;
     padding-bottom: 6rem;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       width: 85%;
     }
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 450px) {
       width: 95%;
     }
   }

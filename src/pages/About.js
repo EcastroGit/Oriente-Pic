@@ -10,7 +10,7 @@ function About() {
         <title>Acerca de - Scenery</title>
         <meta
           name="description"
-          content="Conoce más sobre oriente scenery, nuestro propósito es dar a conocer la belleza del oriente antioqueño."
+          content="Conoce más sobre Oriente Scenery, nuestro propósito es dar a conocer la belleza del Oriente Antioqueño."
         />
       </Helmet>
 

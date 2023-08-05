@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import p1image from "../assets/posts-images/p1image.jpeg";
+import p1image from "../assets/posts-images/p1image.webp";
 import Cta2 from "../components/Cta2";
 
 function Post1() {
@@ -10,7 +10,7 @@ function Post1() {
         <title>Explora el Oriente Antioqueño - Scenery</title>
         <meta
           name="description"
-          content="Maravillos paisajes por recorrer en el oriente antioqueño"
+          content="Maravillos paisajes por recorrer en el Oriente Antioqueño"
         />
       </Helmet>
         <br />

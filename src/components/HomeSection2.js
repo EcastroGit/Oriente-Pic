@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Section2Landscape from "../assets/site/section2-landscape.jpg";
+import Section2Landscape from "../assets/site/section2-landscape.webp";
 import Cta2 from "./Cta2";
 
 function HomeSection2() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Cta2 from "../components/Cta2";
-import p2image from "../assets/posts-images/p2image.jpg";
+import p2image from "../assets/posts-images/p2image.webp";
 
 function Post2() {
   return (

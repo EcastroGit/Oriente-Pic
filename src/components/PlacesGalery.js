@@ -1,12 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import peñol from "../assets/galery/el-peñol.jpg";
-import carmen from "../assets/galery/iglesia-carmendeviboral.jpg";
-import ceja from "../assets/galery/la-ceja.jpg";
-import cocorna from "../assets/galery/cocorna-river.jpg";
-import guatape from "../assets/galery/guatape.jpg";
-import sanCarlos from "../assets/galery/san-carlos.jpg";
+import peñol1 from "../assets/galery/el-peñol1.webp";
+import peñol2 from "../assets/galery/el-peñol2.webp"
+import carmen1 from "../assets/galery/carmen-viboral1.webp";
+import ceja1 from "../assets/galery/la-ceja1.webp";
+import saltoBuey1 from "../assets/galery/ceja-saltobuey1.webp";
+import guarne1 from "../assets/galery/guarne1.webp";
+import cocorna1 from "../assets/galery/cocorna1.webp";
+import cocorna2 from "../assets/galery/cocorna2.webp";
+import guatape1 from "../assets/galery/guatape1.webp";
+import sanCarlos1 from "../assets/galery/san-carlos1.webp";
+import sanLuis1 from "../assets/galery/san-luis1.webp";
+import sanRafael1 from "../assets/galery/san-rafael1.webp";
+
 
 //Galery component
 function PlacesGalery() {
@@ -62,40 +69,76 @@ function PlacesGalery() {
     
     <GaleryWrap>
         <Image
-        image={sanCarlos}
-        title="San Carlos"
-        description="Municipio de rios cristalinos"
-        alt="San Carlos, Antioquia."
+        image={peñol1}
+        title="La Piedra del Peñol"
+        description="La Piedra del Peñol es uno de los atributos naturales más característicos de este municipio y atrae gran cantidad de turistas."
+        alt="El peñol, Antioquia."
         />
        <Image
-        image={guatape}
-        title="Guatape"
-        description="Guatape es un municipio situado en zona de embalses y con gran riqueza hídrica y natural"
-        alt="Guatape"
+        image={peñol2}
+        title="El Peñol"
+        description="El Peñol es un municipio situado en zona de embalses y con gran riqueza hídrica y natural."
+        alt="El peñol, Antioquia."
       />
       <Image
-        image={peñol}
-        title="El peñol"
-        description="El peñol zona de embalses."
-        alt="El peñol"
+        image={carmen1}
+        title="El Carmen"
+        description="El Carmen es un municipio con gran vocación artística, donde la cerámica y la cultura cautivan a propios y visitantes."
+        alt="El Carmen, Antioquia"
       />
       <Image
-        image={carmen}
-        title="El carmen"
-        description="Tierra de cerámica y arte."
-        alt="El carmen"
+        image={ceja1}
+        title="La Ceja"
+        description="La Ceja, Antioquia es un municipio con gran riqueza natural, pero además posee un importante desarrollo urbano."
+        alt="La Ceja, Antioquia"
       />
       <Image
-        image={ceja}
-        title="La ceja"
-        description="La ceja es un municipio con gran riqueza natural."
+        image={saltoBuey1}
+        title="El Salto del buey"
+        description="El Salto del buey es una caída de agua natural ubicada en el municipio de la Ceja, Antioquia."
+        alt="El Salto del Buey, en la Ceja"
+      />
+      <Image
+        image={guarne1}
+        title="El Alto de La Virgen"
+        description="El Alto de la Virgen es un lugar ubicado en Guarne, Antioquia, sobre la via Medellín-Bogotá, y atrae anualmente gran cantidad de turistas religiosos."
+        alt="Cocorná"
+      />
+       <Image
+        image={cocorna1}
+        title="Cocorná"
+        description="Cocorná, Antioquia. Municipio con maravillosas fuentes hídricas y rios cristalinos."
         alt="La ceja"
       />
       <Image
-        image={cocorna}
+        image={cocorna2}
         title="Cocorná"
-        description="Un municipio con gran riqueza hídrica y rios cristalinos."
+        description="El municipio de Cocorná en su zona urbana."
         alt="Cocorná"
+      />
+          <Image
+        image={guatape1}
+        title="Guatapé"
+        description="El Embalse de Guatapé es característico por permitir variedad de atracciónes y deportes náuticos."
+        alt="Guatapé, Antioquia"
+      />
+      <Image
+        image={sanCarlos1}
+        title="San Carlos"
+        description="Un municipio con gran riqueza hídrica y rios cristalinos."
+        alt="San Carlos, Antioquia"
+      />
+           <Image
+        image={sanLuis1}
+        title="San Luis"
+        description="Un municipio con gran riqueza hídrica y rios color turquesa que maravillan por su belleza."
+        alt="San Luis, Antioquia"
+      />
+      <Image
+        image={sanRafael1}
+        title="San Rafael"
+        description="Un municipio para maravillarse por su gran riqueza hídrica y disfrutar de sus aguas naturales."
+        alt="San Rafael, Antioquia"
       />
 
       <Modal />

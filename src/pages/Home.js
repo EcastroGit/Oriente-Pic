@@ -12,7 +12,7 @@ function Home() {
         <title>Paisajes del Oriente Antioqueño - Scenery</title>
         <meta
           name="description"
-          content="Descubre los lugares más hermosos del oriente de antioquia."
+          content="Descubre los lugares más hermosos del Oriente de Antioquia, Colombia."
         />
       </Helmet>
 

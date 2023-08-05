@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Title from "../components/TitleH2";
-import p1image from "../assets/posts-images/p1image.jpeg";
-import p2image from "../assets/posts-images/p2image.jpg";
+import p1image from "../assets/posts-images/p1image.webp";
+import p2image from "../assets/posts-images/p2image.webp";
+import p3image from "../assets/posts-images/p3image.webp";
 
 
 function Blog() {
@@ -25,6 +26,14 @@ function Blog() {
       description:
         "En el Oriente Antioqueño encuentras múltiples municipios donde puedes practicar senderismo.",
       slug: "caminatas-ecologicas"
+    },
+    {
+      key: "Post3",
+      image: p3image,
+      title: "El Oriente Antioqueño: paraíso de fuentes hídricas",
+      description:
+        "Descubre maravillosas fuentes hídricas, para bañarte y disfrutar aguas naturales",
+      slug: "fuentes-hidricas"
     }
   ];
 
@@ -34,7 +43,7 @@ function Blog() {
         <title>Blog - Scenery</title>
         <meta
           name="description"
-          content="Encuentra artículos sobre turismo y lugares del oriente antioqueño."
+          content="Encuentra artículos sobre turismo y lugares del Oriente Antioqueño."
         />
       </Helmet>
 

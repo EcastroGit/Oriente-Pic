@@ -16,7 +16,7 @@ function Places() {
         <Title
           title="Descubre hermosos lugares"
           description="En esta sección encuentras fotografías e información de los lugares más 
-        hermosos del oriente antioqueño"
+        hermosos del Oriente Antioqueño"
         />
       </section>
 

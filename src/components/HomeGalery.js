@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import peñol from "../assets/galery/el-peñol.jpg";
-import carmen from "../assets/galery/iglesia-carmendeviboral.jpg";
-import ceja from "../assets/galery/la-ceja.jpg";
-import cocorna from "../assets/galery/cocorna-river.jpg";
+import peñol1 from "../assets/galery/el-peñol1.webp";
+import carmen1 from "../assets/galery/carmen-viboral1.webp";
+import ceja1 from "../assets/galery/la-ceja1.webp";
+import cocorna1 from "../assets/galery/cocorna1.webp";
 
 //Galery component
 function HomeGalery() {
@@ -59,27 +59,27 @@ function HomeGalery() {
   return (
     <GaleryWrap>
       <Image
-        image={peñol}
+        image={peñol1}
         title="El peñol"
-        description="El peñol zona de embalses."
+        description="El Peñol zona de embalses."
         alt="El peñol"
       />
       <Image
-        image={carmen}
+        image={carmen1}
         title="El carmen"
         description="Tierra de cerámica y arte."
         alt="El carmen"
       />
       <Image
-        image={ceja}
+        image={ceja1}
         title="La ceja"
-        description="La ceja es un municipio con gran riqueza natural."
+        description="La Ceja es un municipio con gran riqueza natural e importante desarrollo urbano."
         alt="La ceja"
       />
       <Image
-        image={cocorna}
+        image={cocorna1}
         title="Cocorná"
-        description="Un municipio con gran riqueza hídrica y rios cristalinos."
+        description="Un municipio con gran riqueza hídrica para disfrutar de sus rios cristalinos."
         alt="Cocorná"
       />
 
