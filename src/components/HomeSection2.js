@@ -10,6 +10,8 @@ function HomeSection2() {
         <img src={Section2Landscape} alt="" />
       </div>
       <div id="section2-text" className="container">
+        <h2>El Oriente Antioqueño</h2>
+        <br />
         <p>
           EL oriente antioqueño es una zona geográfica de gran riqueza turística
           y paisajística, con muchos lugares para explorar y maravillarse de su

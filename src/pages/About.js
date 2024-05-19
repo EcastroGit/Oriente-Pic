@@ -29,6 +29,16 @@ function About() {
             descubrir en esta maravillosa región, e información que te ayudará a
             comprender la historia de algunos de los lugares más icónicos del
             Oriente Antioqueño.
+            <br />
+            <br />
+            La app esta pensada para crear y compartir contenido sobre algunos
+            de los lugares más icónicos y destinos turísticos para visitar en
+            Colombia, y en especial en esta maravillosa región de Antioquia. Es
+            un proyecto que esperamos poder expandir a futuro, para ofrecer una
+            app más completa, y así una mejor experiencia de usuario, donde las
+            personas puedan descubrir contenido de mucho valor, a través del
+            cual puedan aumentar su comprensión de estos lugares, y quizás, tomar
+            decisiones en términos de turismo.
           </p>
         </div>
       </section>
@@ -41,7 +51,7 @@ export default About;
 const AboutWrap = styled.main`
   #about {
     width: 60%;
-    height: 100vh;
+    height: 500px;
     margin: auto;
     text-align: left;
     font-size: 1.2rem;

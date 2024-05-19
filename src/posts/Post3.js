@@ -110,7 +110,7 @@ function Post3() {
         ¡Prepárate para un viaje lleno de frescura, belleza y conexión con la
         naturaleza!
       </p>
-      <Cta2 text="Vovler al feed" link="/blog" />
+      <Cta2 text="Volver al feed" link="/blog" />
     </div>
   );
 }

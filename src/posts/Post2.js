@@ -6,13 +6,13 @@ import p2image from "../assets/posts-images/p2image.webp";
 function Post2() {
   return (
     <div className="post">
-        <Helmet>
-          <title>Caminatas ecológicas - Scenery</title>
-          <meta
+      <Helmet>
+        <title>Caminatas ecológicas - Scenery</title>
+        <meta
           name="description"
           content="Caminatas ecológicas en el Oriente Antioqueño"
-          />
-        </Helmet>
+        />
+      </Helmet>
       <br />
       <br />
       <h2>
@@ -53,25 +53,24 @@ function Post2() {
         realizar caminatas con distintos niveles de dificultad. Desde paseos
         relajantes hasta desafiantes rutas de senderismo, cada camino ofrece una
         experiencia enriquecedora y diferente. Uno de los destinos más populares
-        para caminatas ecológicas es el Parque Natural Regional El Salto del
-        Ángel. Aquí, se pueden recorrer senderos que serpentean a través de
-        densos bosques nublados y conducen a impresionantes cascadas que parecen
-        caer del cielo. La energía que se percibe en este entorno natural es
-        simplemente mágica y te conectará profundamente con la tierra.
+        para caminatas ecológicas es el El Salto del Buey en La Ceja, Antioquia.
+        Aquí, se pueden recorrer senderos que conducen a impresionantes cascadas
+        que parecen caer del cielo. La energía que se percibe en este entorno
+        natural es simplemente mágica y te conectará profundamente con la
+        tierra.
         <br />
         <br />
-        <strong>La Ruta del Café: Naturaleza y Cultura</strong>
+        <strong>Descubrir la tradición del Café: Naturaleza y Cultura</strong>
         <br />
         <br />
-        Para aquellos que desean combinar su amor por la naturaleza con el
-        interés por la cultura local, la Ruta del Café es una opción fascinante.
-        Esta ruta ofrece caminatas a través de plantaciones de café, donde los
-        visitantes pueden aprender sobre el proceso de cultivo y producción del
-        café, un producto emblemático de la región. Además, mientras caminas por
-        los campos de café, tendrás la oportunidad de interactuar con amables
-        agricultores locales que compartirán su conocimiento y pasión por esta
-        bebida ancestral. La experiencia culmina con una deliciosa degustación
-        de café fresco, directamente de las fincas.
+        Esta región de Antioquia ha tenído históricamente una vocación por el
+        cultivo y producción del café, lo que la convierte en un atractivo
+        destino turístico para los amantes de esta bebida milenaria. En el
+        municipio de El Retiro, es posible descubrir diversos establecimientos
+        donde podrás deleitarte con diversas preparaciones, pero también tendrás
+        la posibilidad de caminar a través de diversas zonas de plantación y
+        cultivo, descubriendo así la historia y tradición caficultora de la
+        región.
         <br />
         <br />
         <strong>La Importancia de la Conservación</strong>
@@ -99,7 +98,7 @@ function Post2() {
         vida silvestre. ¡Prepárate para caminar, respirar aire puro y sumergirte
         en la belleza natural del Oriente Antioqueño!
       </p>
-      <Cta2 text="Vovler al feed" link="/blog"/>
+      <Cta2 text="Volver al feed" link="/blog" />
     </div>
   );
 }

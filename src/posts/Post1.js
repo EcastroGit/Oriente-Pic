@@ -13,8 +13,8 @@ function Post1() {
           content="Maravillos paisajes por recorrer en el Oriente Antioqueño"
         />
       </Helmet>
-        <br />
-        <br />
+      <br />
+      <br />
       <h2>
         Explorando el Encantador Oriente Antioqueño: Un Paraíso Turístico por
         Descubrir
@@ -22,8 +22,8 @@ function Post1() {
       <div className="post-banner">
         <img src={p1image} alt="imagen de viajeros" />
       </div>
-        <br />
-        <br />
+      <br />
+      <br />
       <p>
         El departamento de Antioquia en Colombia es conocido por su rica
         historia, impresionantes paisajes y vibrante cultura. Entre las joyas
@@ -45,24 +45,37 @@ function Post1() {
         senderismo, avistamiento de aves y paseos a caballo.
         <br />
         <br />
-        <strong>Pueblos con Encanto</strong>
+        <strong>Municipios con Encanto</strong>
         <br />
         <br />
-        Los pintorescos pueblos del Oriente Antioqueño son una verdadera delicia
-        para los turistas. Entre ellos, se destacan Guatapé, famoso por su
-        colorida arquitectura y la Piedra del Peñol, una gigantesca formación
-        rocosa con impresionantes vistas panorámicas. Otro encantador destino es
-        Jardín, con sus calles empedradas, plazas arboladas y un ambiente
-        tranquilo que invita al descanso y la reflexión.
+        Los pintorescos municipios del Oriente Antioqueño son una verdadera
+        delicia para los turistas. Entre ellos, se destacan Guatapé, famoso por
+        su colorida arquitectura y ceracanía con una represa donde pueden
+        practicarse todo tipo de deportes náuticos. Adicionalmente, también
+        destaca el Peñol y la Piedra del Peñol, una gigantesca formación rocosa
+        con impresionantes vistas panorámicas. El Carmen de Viboral es otro
+        encantador destino que ofrece calles decoradas en adoquines y azulejos
+        que hacen referencia a la cerámica, una tradición histórica del
+        municipio. En este hermoso municipio, también encuentras plazas
+        arboladas y un ambiente tranquilo que invita al descanso y la reflexión.
         <br />
         <br />
-         <strong>Riqueza Cultural e Histórica</strong>
+        <strong>Riqueza Cultural e Histórica</strong>
         <br />
         <br />
         La cultura antioqueña es rica y diversa, y en el Oriente Antioqueño se
         pueden encontrar vestigios históricos que narran la historia de la
         región. Los turistas pueden visitar museos, iglesias coloniales y sitios
-        arqueológicos que ofrecen una mirada al pasado de esta tierra.
+        arqueológicos que ofrecen una mirada al pasado de esta tierra, y como en
+        esta región se libraron, por ejemplo, batallas históricas durante la
+        idependencia de Colombia.
+        <br />
+        <br />
+        Por otra parte, también se pueden descubrir constantemente exposiciones
+        de arte en el Museo de Artes de Rionegro (MAR) y en la casa de la
+        cultura en el Municipio de Marinilla, entre otros lugares donde siempre
+        se podrá dar un vistazo al pasado, para descubrir las memorias
+        históricas de la región.
         <br />
         <br />
         <strong>Delicias Gastronómicas</strong>
@@ -93,7 +106,11 @@ function Post1() {
         Las montañas y ríos ofrecen el escenario perfecto para practicar
         deportes de aventura como rafting, parapente y escalada. Estas
         emocionantes actividades permiten a los viajeros explorar la región
-        desde una perspectiva completamente diferente.
+        desde una perspectiva completamente diferente. En la zona de embalses
+        como Guatapé y El Peñol, también es posible practicar diversidad de
+        deportes náuticos y deportes extremos, lo cual sin duda hace que esta
+        zona sea un lugar obligatorio dentro del itinerario en el Oriente
+        Antioqueño.
         <br />
         <br />
         <strong>La Calidez de su Gente</strong>
@@ -112,7 +129,7 @@ function Post1() {
         sumérgete en las maravillas del Oriente Antioqueño y déjate sorprender
         por su belleza y encanto. ¡Te aseguro que será un viaje inolvidable!"
       </p>
-      <Cta2 text="Vovler al feed" link="/blog"/>
+      <Cta2 text="Volver al feed" link="/blog" />
     </div>
   );
 }
