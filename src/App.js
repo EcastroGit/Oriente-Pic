@@ -5,6 +5,7 @@ import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Home from "./pages/Home.js";
 import Places from "./pages/Places.js";
+import Social from "./pages/Social.js";
 import Blog from "./pages/Blog.js";
 import Post1 from "./posts/Post1";
 import Post2 from "./posts/Post2";
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/places" element={<Places />} />
+        <Route path="/social" element={<Social />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/explorando-oriente" element={<Post1 />} />
         <Route path="/blog/caminatas-ecologicas" element={<Post2 />} />

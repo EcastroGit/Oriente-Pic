@@ -7,7 +7,7 @@ function About() {
   return (
     <AboutWrap>
       <Helmet>
-        <title>Acerca de - Scenery</title>
+        <title>Acerca de - Oriente Pic</title>
         <meta
           name="description"
           content="Conoce más sobre Oriente Scenery, nuestro propósito es dar a conocer la belleza del Oriente Antioqueño."
@@ -15,13 +15,13 @@ function About() {
       </Helmet>
 
       <section>
-        <Title title="Que es Oriente Scenery?" description="" />
+        <Title title="Que es Oriente Pic?" description="" />
       </section>
 
       <section>
         <div id="about">
           <p>
-            Oriente Scenery es una aplicación web sobre turismo y fotografías en
+            Oriente Pic es una aplicación web sobre turismo y fotografías en
             el Oriente Antioqueño, desarrollada para exaltar la belleza de esta
             región de Antioquia, la cual posee una gran riqueza natural y
             paisajística. En el sitio web también encuentras artículos de blog

@@ -7,7 +7,7 @@ function PrivacyPolicy() {
   return (
     <PrivacyWrap>
       <Helmet>
-        <title>Políticas de privacidad - Scenery</title>
+        <title>Políticas de privacidad - Oriente Pic</title>
         <meta
           name="description"
           content="Como Scenery recopila y usa tus datos."
@@ -27,7 +27,7 @@ function PrivacyPolicy() {
           <br />
 
           <p>
-            A Oriente Scenery en adelante ("el sitio web") le preocupa
+            A Oriente Pic en adelante ("el sitio web") le preocupa
             profundamente la privacidad de sus visitantes y usuarios. En tal
             virtud, en la presente Política de privacidad (“Política de
             privacidad”) se describe cómo el sitio recopila, utiliza, comparte y

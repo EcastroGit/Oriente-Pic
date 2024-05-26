@@ -24,6 +24,7 @@ const Cta2Wrap = styled.div`
 
   a {
     color: red;
+    font-size: 1.4rem;
     &:hover {
       color: orangered;
     }

@@ -20,12 +20,15 @@ const TitleWrap = styled.div`
   width: 70%;
   h2 {
     margin: 4rem auto 1rem;
+    font-size: 2rem;
     @media screen and (max-width: 450px) {
       margin: 3rem auto 1rem;
     }
   }
   p {
+    font-size: 1.4rem;
     margin: 0 auto 2rem;
+    font-size: 22px;
     @media screen and (max-width: 450px) {
       margin: 0 auto 2rem;
     }

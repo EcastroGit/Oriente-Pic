@@ -7,10 +7,10 @@ function Footer() {
     <FooterWrap id="footer">
       <div id="footer-navigation">
         <span>
-          <Link to="/">Inicio</Link>
+          <Link to="/places">Lugares</Link>
         </span>
         <span>
-          <Link to="/places">Lugares</Link>
+          <Link to="/social">Social</Link>
         </span>
         <span>
           <Link to="/blog">Blog</Link>
@@ -25,11 +25,11 @@ function Footer() {
         </span>
       </div>
       <div id="copyright">
-        <p>© Copyright 2023 - Oriente Scenery</p>
+        <p>© Copyright 2023 - Oriente Pic</p>
       </div>
       <div id="credits">
         <p>
-          Developed by <strong>Esteban Castro</strong>
+          Desarrollado por <strong>Esteban Castro</strong>
         </p>
       </div>
     </FooterWrap>

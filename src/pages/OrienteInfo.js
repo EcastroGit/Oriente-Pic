@@ -7,7 +7,7 @@ function OrienteInfo() {
   return (
     <OrienteInfoWrap>
       <Helmet>
-        <title>Acerca del Oriente Antioqueño - Scenery</title>
+        <title>Acerca del Oriente Antioqueño</title>
         <meta
           name="description"
           content="Descubre inforamción sobre la región del Oriente Antioqueño, Colombia."

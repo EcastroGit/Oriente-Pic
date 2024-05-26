@@ -31,7 +31,6 @@ const HomeSection2Wrap = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  font-size: 1.3rem;
   margin: auto;
   padding: 80px;
   height: fit-content;
@@ -41,7 +40,6 @@ const HomeSection2Wrap = styled.div`
     margin: 10px auto 10px;
     padding: 10px;
     width: 50%;
-
     img {
       max-width: 100%;
       transition: transform 2s ease;
@@ -51,7 +49,6 @@ const HomeSection2Wrap = styled.div`
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
       }
     }
-
     @media screen and (max-width: 768px) {
       width: 80%;
     }
@@ -65,7 +62,12 @@ const HomeSection2Wrap = styled.div`
     padding: 10px;
     width: 50%;
     text-align: left;
-
+    h2{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.4rem;
+    }
     @media screen and (max-width: 768px) {
       width: 80%;
     }

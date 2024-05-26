@@ -9,7 +9,7 @@ function Home() {
   return (
     <HomeWrap id="home">
       <Helmet>
-        <title>Paisajes del Oriente Antioqueño - Scenery</title>
+        <title>Paisajes del Oriente Antioqueño - Oriente Pic</title>
         <meta
           name="description"
           content="Descubre los lugares más hermosos del Oriente de Antioquia, Colombia."

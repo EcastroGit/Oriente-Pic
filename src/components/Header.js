@@ -35,15 +35,15 @@ function Header() {
     <HeaderWrap id="header">
       <Link id="logo" to="/" rel="noopener noreferrer">
         <h2>
-          Oriente <span>Scenery</span>
+          Oriente <span>Pic</span>
         </h2>
       </Link>
       <nav id="navigation" className={`links ${clicked ? "active" : ""}`}>
-        <Link onClick={handleClick} to="/" rel="noopener noreferrer">
-          Inicio
-        </Link>
         <Link onClick={handleClick} to="/places" rel="noopener noreferrer">
           Lugares
+        </Link>
+        <Link onClick={handleClick} to="/social" rel="noopener noreferrer">
+          Social
         </Link>
         <Link onClick={handleClick} to="/blog" rel="noopener noreferrer">
           Blog
@@ -73,7 +73,7 @@ const HeaderWrap = styled.header`
   a {
     text-decoration: none;
   }
-
+ 
   h2 {
     color: white;
     font-weight: 400;
@@ -83,12 +83,17 @@ const HeaderWrap = styled.header`
     }
   }
 
+  h2:hover span {
+    color: orangered;
+  }
+
   #navigation {
     margin-right: 40px;
     a {
       color: white;
       text-decoration: none;
       margin-right: 1rem;
+      
       &:hover {
         color: orangered;
       }

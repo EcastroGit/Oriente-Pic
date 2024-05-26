@@ -40,7 +40,7 @@ function Blog() {
   return (
     <BlogWrap>
       <Helmet>
-        <title>Blog - Scenery</title>
+        <title>Blog - Oriente Pic</title>
         <meta
           name="description"
           content="Encuentra artículos sobre turismo y lugares del Oriente Antioqueño."

@@ -8,7 +8,7 @@ function Places() {
   return (
     <PlacesWrap>
       <Helmet>
-        <title>Lugares - Scenery</title>
+        <title>Lugares - Oriente Pic</title>
         <meta name="description" content="página de de lugares y fotos" />
       </Helmet>
 
