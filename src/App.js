@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer.js";
+import Header from "./components/SiteHeader.js";
+import Footer from "./components/SiteFooter.js";
 import Home from "./pages/Home.js";
 import Places from "./pages/Places.js";
 import Social from "./pages/Social.js";

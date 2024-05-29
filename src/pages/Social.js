@@ -43,43 +43,44 @@ function Social() {
         el Planeta
         <br />
         <br />
-        <strong>Reducir, Reutilizar y Reciclar:</strong> La gestión de residuos es fundamental.
-        Reducir el consumo de productos desechables, reutilizar artículos y
-        reciclar materiales puede disminuir significativamente la cantidad de
-        basura que acaba en vertederos y océanos.
+        <strong>Reducir, Reutilizar y Reciclar:</strong> La gestión de residuos
+        es fundamental. Reducir el consumo de productos desechables, reutilizar
+        artículos y reciclar materiales puede disminuir significativamente la
+        cantidad de basura que acaba en vertederos y océanos.
         <br />
         <br />
-        <strong>Uso Responsable del Agua:</strong> El agua es un recurso finito. Adoptar
-        prácticas como reparar fugas, utilizar dispositivos de ahorro de agua y
-        optar por plantas nativas que requieren menos riego puede contribuir a
-        la conservación de este vital recurso.
+        <strong>Uso Responsable del Agua:</strong> El agua es un recurso finito.
+        Adoptar prácticas como reparar fugas, utilizar dispositivos de ahorro de
+        agua y optar por plantas nativas que requieren menos riego puede
+        contribuir a la conservación de este vital recurso.
         <br />
         <br />
-        <strong>Energía Sostenible:</strong> Transicionar a fuentes de energía renovable como la
-        solar, eólica e hidroeléctrica reduce la dependencia de combustibles
-        fósiles, disminuyendo así las emisiones de gases de efecto invernadero.
-        Invertir en eficiencia energética, como el uso de bombillas LED y
-        electrodomésticos eficientes, también ayuda.
+        <strong>Energía Sostenible:</strong> Transicionar a fuentes de energía
+        renovable como la solar, eólica e hidroeléctrica reduce la dependencia
+        de combustibles fósiles, disminuyendo así las emisiones de gases de
+        efecto invernadero. Invertir en eficiencia energética, como el uso de
+        bombillas LED y electrodomésticos eficientes, también ayuda.
         <br />
         <br />
-        <strong>Movilidad Sostenible:</strong> Optar por el transporte público, bicicletas,
-        caminar o vehículos eléctricos reduce la huella de carbono asociada con
-        los desplazamientos diarios. Promover políticas de movilidad sostenible
-        en las ciudades es esencial para un cambio a gran escala.
+        <strong>Movilidad Sostenible:</strong> Optar por el transporte público,
+        bicicletas, caminar o vehículos eléctricos reduce la huella de carbono
+        asociada con los desplazamientos diarios. Promover políticas de
+        movilidad sostenible en las ciudades es esencial para un cambio a gran
+        escala.
         <br />
         <br />
-        <strong>Consumo Responsable:</strong> Elegir productos locales y de temporada, reducir el
-        consumo de carne y evitar productos con alto impacto ambiental son
-        decisiones que pueden minimizar nuestra huella ecológica. Apoyar a
-        empresas que adoptan prácticas sostenibles también fomenta un cambio
-        positivo en la industria.
+        <strong>Consumo Responsable:</strong> Elegir productos locales y de
+        temporada, reducir el consumo de carne y evitar productos con alto
+        impacto ambiental son decisiones que pueden minimizar nuestra huella
+        ecológica. Apoyar a empresas que adoptan prácticas sostenibles también
+        fomenta un cambio positivo en la industria.
         <br />
         <br />
-        <strong>Protección de Ecosistemas:</strong> Participar en proyectos de reforestación,
-        proteger áreas naturales y apoyar la conservación de la fauna y flora
-        son acciones directas que ayudan a mantener la biodiversidad. Los
-        parques nacionales y las reservas naturales necesitan de nuestro apoyo y
-        respeto.
+        <strong>Protección de Ecosistemas:</strong> Participar en proyectos de
+        reforestación, proteger áreas naturales y apoyar la conservación de la
+        fauna y flora son acciones directas que ayudan a mantener la
+        biodiversidad. Los parques nacionales y las reservas naturales necesitan
+        de nuestro apoyo y respeto.
         <br />
         <br />
         <strong>Educación y Conciencia</strong>

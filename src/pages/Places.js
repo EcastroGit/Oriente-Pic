@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Title from "../components/TitleH2.js";
-import PlacesGalery from "../components/PlacesGalery.js";
+import GaleryBig from "../components/GaleryBig.js";
 
 function Places() {
   return (
@@ -14,14 +14,13 @@ function Places() {
 
       <section>
         <Title
-          title="Descubre hermosos lugares"
-          description="En esta sección encuentras fotografías e información de los lugares más 
-        hermosos del Oriente Antioqueño"
+          title="Galerías"
+          description="En esta sección encuentras fotografías e información sobre algunos de los lugares más icónicos del Oriente Antioqueño"
         />
       </section>
 
       <section>
-        <PlacesGalery />
+        <GaleryBig />
       </section>
     </PlacesWrap>
   );
@@ -30,6 +29,6 @@ function Places() {
 export default Places;
 
 const PlacesWrap = styled.main`
-height: auto;
-padding-bottom: 6rem;
+  height: auto;
+  padding-bottom: 6rem;
 `;

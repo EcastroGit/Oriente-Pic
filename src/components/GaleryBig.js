@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import peñol1 from "../assets/galery/el-peñol1.webp";
-import peñol2 from "../assets/galery/el-peñol2.webp"
+import peñol2 from "../assets/galery/el-peñol2.webp";
 import carmen1 from "../assets/galery/carmen-viboral1.webp";
 import ceja1 from "../assets/galery/la-ceja1.webp";
 import saltoBuey1 from "../assets/galery/ceja-saltobuey1.webp";
@@ -13,7 +13,6 @@ import guatape1 from "../assets/galery/guatape1.webp";
 import sanCarlos1 from "../assets/galery/san-carlos1.webp";
 import sanLuis1 from "../assets/galery/san-luis1.webp";
 import sanRafael1 from "../assets/galery/san-rafael1.webp";
-
 
 //Galery component
 function PlacesGalery() {
@@ -66,15 +65,14 @@ function PlacesGalery() {
 
   //Return of the general Galery component
   return (
-    
     <GaleryWrap>
-        <Image
+      <Image
         image={peñol1}
         title="La Piedra del Peñol"
         description="La Piedra del Peñol es uno de los atributos naturales más característicos de este municipio y atrae gran cantidad de turistas."
         alt="El peñol, Antioquia."
-        />
-       <Image
+      />
+      <Image
         image={peñol2}
         title="El Peñol"
         description="El Peñol es un municipio situado en zona de embalses y con gran riqueza hídrica y natural."
@@ -104,7 +102,7 @@ function PlacesGalery() {
         description="El Alto de la Virgen es un lugar ubicado en Guarne, Antioquia, sobre la via Medellín-Bogotá, y atrae anualmente gran cantidad de turistas religiosos."
         alt="Cocorná"
       />
-       <Image
+      <Image
         image={cocorna1}
         title="Cocorná"
         description="Cocorná, Antioquia. Municipio con maravillosas fuentes hídricas y rios cristalinos."
@@ -116,7 +114,7 @@ function PlacesGalery() {
         description="El municipio de Cocorná en su zona urbana."
         alt="Cocorná"
       />
-          <Image
+      <Image
         image={guatape1}
         title="Guatapé"
         description="El Embalse de Guatapé es característico por permitir variedad de atracciónes y deportes náuticos."
@@ -128,7 +126,7 @@ function PlacesGalery() {
         description="Un municipio con gran riqueza hídrica y rios cristalinos."
         alt="San Carlos, Antioquia"
       />
-           <Image
+      <Image
         image={sanLuis1}
         title="San Luis"
         description="Un municipio con gran riqueza hídrica y rios color turquesa que maravillan por su belleza."

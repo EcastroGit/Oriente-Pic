@@ -7,6 +7,7 @@ function Cta2({ id, className, link, text }) {
     <Cta2Wrap id={id} className={className}>
       <Link to={link} rel="noopener noreferrer">
         {text}
+        <i class="bi bi-arrow-right" style={{ marginLeft: "5px" }}></i>
       </Link>
     </Cta2Wrap>
   );
@@ -25,6 +26,7 @@ const Cta2Wrap = styled.div`
   a {
     color: red;
     font-size: 1.4rem;
+    font-weight: 600;
     &:hover {
       color: orangered;
     }

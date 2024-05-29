@@ -69,11 +69,14 @@ const HeaderWrap = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  nav {
+    padding-right: 4rem;
+  }
 
   a {
     text-decoration: none;
   }
- 
+
   h2 {
     color: white;
     font-weight: 400;
@@ -87,16 +90,14 @@ const HeaderWrap = styled.header`
     color: orangered;
   }
 
-  #navigation {
-    margin-right: 40px;
-    a {
-      color: white;
-      text-decoration: none;
-      margin-right: 1rem;
-      
-      &:hover {
-        color: orangered;
-      }
+  #navigation a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    will-change: filter;
+    transition: color 700ms;
+    &:hover {
+      color: orangered;
     }
   }
 

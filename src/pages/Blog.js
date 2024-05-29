@@ -7,7 +7,6 @@ import p1image from "../assets/posts-images/p1image.webp";
 import p2image from "../assets/posts-images/p2image.webp";
 import p3image from "../assets/posts-images/p3image.webp";
 
-
 function Blog() {
   const posts = [
     {
@@ -17,7 +16,7 @@ function Blog() {
         "Explorando el Oriente Antioqueño: Un paraíso turístico por descubrir.",
       description:
         "El oriente es un lugar lleno de riqueza natural, con verdes paisajes y fuentes hídricas.",
-      slug: "explorando-oriente"
+      slug: "explorando-oriente",
     },
     {
       key: "Post2",
@@ -25,7 +24,7 @@ function Blog() {
       title: "Descubre rutas para realizar caminatas ecológicas.",
       description:
         "En el Oriente Antioqueño encuentras múltiples municipios donde puedes practicar senderismo.",
-      slug: "caminatas-ecologicas"
+      slug: "caminatas-ecologicas",
     },
     {
       key: "Post3",
@@ -33,8 +32,8 @@ function Blog() {
       title: "El Oriente Antioqueño: paraíso de fuentes hídricas",
       description:
         "Descubre maravillosas fuentes hídricas, para bañarte y disfrutar aguas naturales",
-      slug: "fuentes-hidricas"
-    }
+      slug: "fuentes-hidricas",
+    },
   ];
 
   return (
@@ -43,16 +42,14 @@ function Blog() {
         <title>Blog - Oriente Pic</title>
         <meta
           name="description"
-          content="Encuentra artículos sobre turismo y lugares del Oriente Antioqueño."
+          content="Artículos sobre turismo, actualidad y lugares por descubrir en el Oriente Antioqueño."
         />
       </Helmet>
-
 
       <section>
         <Title
           title="Blog"
-          description="En esta sección encuentras artículos interesantes sobre turismo y bellos lugares
-        por descubrir en antioquia."
+          description="Artículos sobre turismo, actualidad y lugares por descubrir en el Oriente Antioqueño."
         />
       </section>
 
@@ -105,10 +102,10 @@ const BlogWrap = styled.main`
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.7s ease;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.03);
-      }
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
 
     #post-image {
       margin-bottom: 10px;

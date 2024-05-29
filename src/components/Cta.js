@@ -23,9 +23,10 @@ const CtaWrap = styled.div`
   margin: auto;
   border-radius: 4px;
   padding: 7px;
+  transition: background-color 500ms, color 500ms;
 
   &:hover {
-    background-color: orangered;
+    background-color: #ff7f27;
     cursor: pointer;
   }
   a {

@@ -16,9 +16,9 @@ function Banner() {
           El Oriente Antioqueño es una cautivadora tierra donde la belleza
           natural alcanza su máxima expresión en exuberantes paisajes que
           inspiran asombro y deleite. Desde majestuosas montañas que se pierden
-          en el horizonte hasta valles cubiertos de una vegetación extensa,
-          esta región de Colombia nos brinda una sinfonía visual de colores y
-          formas que cautivan los sentidos.
+          en el horizonte hasta valles cubiertos de una vegetación extensa, esta
+          región de Colombia nos brinda una sinfonía visual de colores y formas
+          que cautivan los sentidos.
         </p>
         <br />
         <br />
@@ -76,7 +76,6 @@ const BannerWrap = styled.div`
     }
     @media screen and (max-width: 768px) {
       width: 95%;
-     
     }
   }
 

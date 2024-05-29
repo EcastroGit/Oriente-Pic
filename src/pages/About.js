@@ -21,8 +21,8 @@ function About() {
       <section>
         <div id="about">
           <p>
-            Oriente Pic es una aplicación web sobre turismo y fotografías en
-            el Oriente Antioqueño, desarrollada para exaltar la belleza de esta
+            Oriente Pic es una aplicación web sobre turismo y fotografías en el
+            Oriente Antioqueño, desarrollada para exaltar la belleza de esta
             región de Antioquia, la cual posee una gran riqueza natural y
             paisajística. En el sitio web también encuentras artículos de blog
             donde podrás descubrir información relevante sobre lugares por
@@ -37,8 +37,8 @@ function About() {
             un proyecto que esperamos poder expandir a futuro, para ofrecer una
             app más completa, y así una mejor experiencia de usuario, donde las
             personas puedan descubrir contenido de mucho valor, a través del
-            cual puedan aumentar su comprensión de estos lugares, y quizás, tomar
-            decisiones en términos de turismo.
+            cual puedan aumentar su comprensión de estos lugares, y quizás,
+            tomar decisiones en términos de turismo.
           </p>
         </div>
       </section>

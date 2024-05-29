@@ -27,16 +27,19 @@ function PrivacyPolicy() {
           <br />
 
           <p>
-            A Oriente Pic en adelante ("el sitio web") le preocupa
-            profundamente la privacidad de sus visitantes y usuarios. En tal
-            virtud, en la presente Política de privacidad (“Política de
-            privacidad”) se describe cómo el sitio recopila, utiliza, comparte y
-            almacena su información personal cuando visita
-            <a href="https://orientescenery.netlify.app/"> enlace al sitio publicado</a> y todos sus subdominios.
-            Asimismo, se explican los derechos que en materia de datos usted
-            puede tener sobre dicha Información Personal. Esta política de
-            privacidad se aplica a todos los usuarios del sitio web
-            (“usuario(s)”, “usted”, o “su(s)”). Antes de acceder a nuestros
+            A Oriente Pic en adelante ("el sitio web") le preocupa profundamente
+            la privacidad de sus visitantes y usuarios. En tal virtud, en la
+            presente Política de privacidad (“Política de privacidad”) se
+            describe cómo el sitio recopila, utiliza, comparte y almacena su
+            información personal cuando visita
+            <a href="https://orientescenery.netlify.app/">
+              {" "}
+              enlace al sitio publicado
+            </a>{" "}
+            y todos sus subdominios. Asimismo, se explican los derechos que en
+            materia de datos usted puede tener sobre dicha Información Personal.
+            Esta política de privacidad se aplica a todos los usuarios del sitio
+            web (“usuario(s)”, “usted”, o “su(s)”). Antes de acceder a nuestros
             servicios o utilizarlos, sírvase leer esta política y asegurarse de
             entender plenamente nuestras prácticas en lo que respecta a su
             Información personal. Si después de haber leído y entendido
