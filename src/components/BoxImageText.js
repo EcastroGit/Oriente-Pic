@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Cta2 from "./Cta2";
 
-const ImageTextBox = ({ className, image, alt, title, text, link, ctaLink }) => {
+const ImageTextBox = ({ className, imgClassName, image, alt, title, text, link, ctaLink }) => {
   return (
     <BoxImageTextWrap className={className}>
       <div className="box-image">
-        <img src={image} alt={alt} />
+        <img className={imgClassName} src={image} alt={alt} />
       </div>
 
       <div className="box-text">

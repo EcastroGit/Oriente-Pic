@@ -13,6 +13,20 @@
     sans-serif;
 }
 
+/* Animations for spinning elements */
+.spin {
+  animation: rotate 150s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Styles for blog posts */
 
 .post {

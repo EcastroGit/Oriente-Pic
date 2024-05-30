@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import Banner from "../components/Banner.js";
-import Carousel from "../components/GaleryCarousel.js";
+import GaleryCarousel from "../components/GaleryCarousel.js";
 import BoxImageText from "../components/BoxImageText.js";
 import earth from "../assets/site/earth.webp";
 import Landscape from "../assets/site/section2-landscape.webp";
+import Spacer from "../components/Spacer.js";
+import { imagesCarousel } from "../data/homeImagesCarousel";
 
 function Home() {
   return (
@@ -22,11 +24,12 @@ function Home() {
         <Banner />
       </section>
       <section>
-        <Carousel />
+        <GaleryCarousel imagesArray={imagesCarousel} />
       </section>
+      <Spacer pixels="50" />
       <section>
         <BoxImageText
-          className="spin"
+          imgClassName="spin"
           image={earth}
           alt="Ilustración de la tierra"
           title="Acciones que contribuyen a cuidar la casa común"
@@ -60,16 +63,4 @@ export default Home;
 
 const HomeWrap = styled.main`
   height: fit-content;
-  .spin img {
-    animation: rotate 150s linear infinite;
-  }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 `;
