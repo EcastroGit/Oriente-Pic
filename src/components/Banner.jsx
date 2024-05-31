@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bannerImage from "../assets/site/banner-image.webp";
-import Cta from "./Cta.js";
+import Cta from "./Cta";
 
 function Banner() {
   return (

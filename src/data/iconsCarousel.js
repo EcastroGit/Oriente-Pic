@@ -7,10 +7,10 @@ import icon5 from "../assets/site/icons/reciclar.webp"
 import icon6 from "../assets/site/icons/movilidad.webp"
 
 export const accionesResponsables = [
-    { id: 1, content: icon1, name:"Consumo responsable", alt: "Ilustración" },
-    { id: 2, content: icon2, name:"Uso responsable del agua", alt: "Ilustración" },
-    { id: 3, content: icon3, name:"Protección de ecosistemas", alt: "Ilustración" },
-    { id: 4, content: icon4, name:"Energía sostenible", alt: "Ilustración" },
-    { id: 5, content: icon5, name:"Reutilizar y reciclar", alt: "Ilustración" },
-    { id: 5, content: icon6, name:"Movilidad sostenible", alt: "Ilustración" }
+    { id: 1, image: icon1, title:"Consumo responsable", alt: "Ilustración" },
+    { id: 2, image: icon2, title:"Uso responsable del agua", alt: "Ilustración" },
+    { id: 3, image: icon3, title:"Protección de ecosistemas", alt: "Ilustración" },
+    { id: 4, image: icon4, title:"Energía sostenible", alt: "Ilustración" },
+    { id: 5, image: icon5, title:"Reutilizar y reciclar", alt: "Ilustración" },
+    { id: 5, image: icon6, title:"Movilidad sostenible", alt: "Ilustración" }
   ];

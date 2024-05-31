@@ -17,7 +17,7 @@ export default Cta;
 const CtaWrap = styled.div`
   background-color: red;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   height: fit-content;
   width: fit-content;
   margin: auto;

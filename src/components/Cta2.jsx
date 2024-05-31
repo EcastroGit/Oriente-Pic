@@ -30,5 +30,8 @@ const Cta2Wrap = styled.div`
     &:hover {
       color: orangered;
     }
+    @media screen and (max-width: 600px){
+      font-size: 1.2rem;
+    }
   }
 `;

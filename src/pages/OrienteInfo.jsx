@@ -3,13 +3,11 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Title from "../components/TitleH2";
 import ResponsiveText from "../components/ResponsiveText75";
-import Spacer from "../components/Spacer"
+import Spacer from "../components/Spacer";
 import CardsGroup from "../components/CardsGroup";
 import { cardsOrienteRegions } from "../data/orienteAntCards";
 
-
 function OrienteInfo() {
-
   return (
     <OrienteInfoWrap>
       <Helmet>
@@ -21,17 +19,15 @@ function OrienteInfo() {
       </Helmet>
 
       <Title title="El Oriente Antioqueño" />
-      <ResponsiveText 
-      text="Antioquia, uno de los departamentos más diversos y pintorescos de Colombia, alberga una región que enamora a los visitantes con su deslumbrante belleza natural y rica herencia cultural. El Oriente Antioqueño, región ubicada cerca a la ciudad de Medellín, capital del departamento, cautiva a los aventureros, amantes de la naturaleza y curiosos culturales con una mezcla única de paisajes impresionantes, municipios encantadores y tradiciones arraigadas. El oriente antioqueño está conformado por las siguiente cuatro subregiones:" 
-      textAlign="left"
+      <ResponsiveText
+        text="Antioquia, uno de los departamentos más diversos y pintorescos de Colombia, alberga una región que enamora a los visitantes con su deslumbrante belleza natural y rica herencia cultural. El Oriente Antioqueño, región ubicada cerca a la ciudad de Medellín, capital del departamento, cautiva a los aventureros, amantes de la naturaleza y curiosos culturales con una mezcla única de paisajes impresionantes, municipios encantadores y tradiciones arraigadas. El oriente antioqueño está conformado por las siguiente cuatro subregiones:"
+        textAlign="left"
       />
       <Spacer pixels="50" />
       <CardsGroup cardsArray={cardsOrienteRegions} />
       <Spacer pixels="100" />
-  
-      <div>
-       
-      </div>
+
+      <div></div>
     </OrienteInfoWrap>
   );
 }

@@ -3,25 +3,18 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Title from "./TitleH2";
-import Spacer from "./Spacer";
 
-const BrandsCarousel = ({title, cardsArray}) => {
+const GaleryCarousel = ({ imagesArray }) => {
   const settings = {
-    dots: false,
-    slidesToShow: 4,
+    dots: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    infinite: true,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 10,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 0,
         },
@@ -29,7 +22,7 @@ const BrandsCarousel = ({title, cardsArray}) => {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 0,
         },
@@ -37,23 +30,12 @@ const BrandsCarousel = ({title, cardsArray}) => {
     ],
   };
 
-
-
   return (
     <Carousel className="carousel">
-      <Title
-        title={title}
-        description=""
-      />
-      <Spacer pixels="20" />
       <Slider {...settings}>
-        {cardsArray.map((card) => (
-          <div key={card.id} className="card">
-            <img
-              src={card.content}
-              alt={card.alt}
-            ></img>
-            <p style={{fontWeight:"bold", padding:"5px 0 5px"}}>{card.name}</p>
+        {imagesArray.map((i) => (
+          <div key={i.id} className="card">
+            <img src={i.image} alt={i.alt}></img>
           </div>
         ))}
       </Slider>
@@ -61,11 +43,11 @@ const BrandsCarousel = ({title, cardsArray}) => {
   );
 };
 
-export default BrandsCarousel;
+export default GaleryCarousel;
 
 const Carousel = styled.div`
-  margin: auto;
-  width: 70%;
+  margin: 2rem auto 2rem;
+  width: 80%;
   .slick-prev,
   .slick-next {
     width: 30px;
@@ -74,21 +56,18 @@ const Carousel = styled.div`
   }
   .slick-prev:before,
   .slick-next:before {
-    color: black; /* Cambia este valor al color que desees */
-    font-size: 30px; /* Ajusta el tamaño del icono si es necesario */
+    color: black;
+    font-size: 30px;
   }
   img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    width: 400px;
     object-fit: cover;
+    height: 250px;
+    margin: auto;
     transition: transform 0.7s ease;
+
     @media screen and (max-width: 768px) {
       max-width: 300px;
-    }
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.05);
     }
   }
   #home-galery-cta {

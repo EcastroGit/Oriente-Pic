@@ -5,9 +5,7 @@ import styled from "styled-components";
 import Title from "../components/TitleH2";
 import { posts } from "../data/blogFeedCards";
 
-
 function Blog() {
-  
   return (
     <BlogWrap>
       <Helmet>

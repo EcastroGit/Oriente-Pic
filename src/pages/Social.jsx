@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import Title from "../components/TitleH2";
-import ResponsiveImage from "../components/ResponsiveImage25.js";
+import ResponsiveImage from "../components/ResponsiveImage30";
 import earth from "../assets/site/earth.webp";
 import Spacer from "../components/Spacer";
-import ResponsiveText from "../components/ResponsiveText75.js";
-import BrandsCarousel from "../components/BrandsCarousel.js";
-import BoxImageText from "../components/BoxImageText.js";
+import ResponsiveText from "../components/ResponsiveText75";
+import BrandsCarousel from "../components/BrandsCarousel";
+import BoxImageText from "../components/BoxImageText";
 import sustainability from "../assets/site/sustainability.webp";
-import { accionesResponsables } from "../data/iconsCarousel.js";
+import { accionesResponsables } from "../data/iconsCarousel";
 
 function Social() {
   return (
@@ -46,16 +46,20 @@ function Social() {
         />
       </section>
       <section>
-        <BrandsCarousel title="Acciones responsables" cardsArray={accionesResponsables} />
+        <BrandsCarousel
+          title="Acciones responsables"
+          cardsArray={accionesResponsables}
+        />
       </section>
       <Spacer pixels="50" />
       <section>
         <BoxImageText
-          image={sustainability}
+          imageSrc={sustainability}
           alt="Sostenibilidad"
           title="Equilibrio natural"
-          text=" La biodiversidad y los recursos naturales son esenciales para la  vida. Sin embargo, actividades humanas como la deforestación, la quema de combustibles fósiles y la contaminación han puesto en riesgo estos  elementos cruciales. El cuidado del planeta no solo implica conservar  los recursos naturales, sino también garantizar que los ecosistemas  puedan seguir sosteniendo vida en todas sus formas."
-          ctaLink="Descubre como contribuir"
+          text=" La biodiversidad y los recursos naturales son esenciales para la  vida. Sin embargo, actividades humanas como la deforestación, la quema de combustibles fósiles y la contaminación han puesto en riesgo estos  elementos cruciales. Descubre algunas iniciativas para aportar al equilibrio ambiental."
+          ctaText="Más información"
+          ctaLink="#"
         />
       </section>
     </SocialWrap>

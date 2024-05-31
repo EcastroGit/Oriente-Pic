@@ -4,17 +4,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Title from "./TitleH2";
-import Cta from "./Cta";
+import Spacer from "./Spacer";
 
-const GaleryCarousel = ({imagesArray}) => {
+const BrandsCarousel = ({title, cardsArray}) => {
   const settings = {
-    dots: true,
-    slidesToShow: 3,
+    dots: false,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    infinite: true,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 10,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -22,7 +35,7 @@ const GaleryCarousel = ({imagesArray}) => {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -32,35 +45,35 @@ const GaleryCarousel = ({imagesArray}) => {
     ],
   };
 
-  
+
+
   return (
     <Carousel className="carousel">
       <Title
-        title="Fotografías"
-        description="Aquí te presentamos algunos de 
-      los lugares más hermosos del Oriente Antioqueño."
+        title={title}
+        description=""
       />
+      <Spacer pixels="20" />
       <Slider {...settings}>
-        {imagesArray.map((card) => (
-          <div key={card.id} className="card">
+        {cardsArray.map((i) => (
+          <div key={i.id} className="card">
             <img
-              src={card.content}
-              alt={card.alt}
-              /*  onClick={() => handleModal(image, title, description)} */
+              src={i.image}
+              alt={i.alt}
             ></img>
+            <p style={{fontWeight:"bold", padding:"5px 0 5px"}}>{i.title}</p>
           </div>
         ))}
       </Slider>
-      <Cta id="home-galery-cta" text="Ver todas" link="/places" />
     </Carousel>
   );
 };
 
-export default GaleryCarousel;
+export default BrandsCarousel;
 
 const Carousel = styled.div`
   margin: auto;
-  width: 80%;
+  width: 70%;
   .slick-prev,
   .slick-next {
     width: 30px;
@@ -73,16 +86,14 @@ const Carousel = styled.div`
     font-size: 30px; /* Ajusta el tamaño del icono si es necesario */
   }
   img {
-    width: 400px;
-    object-fit: cover;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     margin: auto;
+    object-fit: cover;
     transition: transform 0.7s ease;
-
     @media screen and (max-width: 768px) {
       max-width: 300px;
     }
-
     &:hover {
       cursor: pointer;
       transform: scale(1.05);

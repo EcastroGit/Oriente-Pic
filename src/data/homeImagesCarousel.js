@@ -5,9 +5,9 @@ import cocorna1 from "../assets/galery/cocorna1.webp";
 import cejaSaltoBuey1 from "../assets/galery/ceja-saltobuey1.webp";
 
 export const imagesCarousel = [
-    { id: 1, content: peñol1, alt: "Imagen de el peñol" },
-    { id: 2, content: carmen1, alt: "Imagen de el Carmen" },
-    { id: 3, content: ceja1, alt: "Imagen de la Ceja" },
-    { id: 4, content: cocorna1, alt: "Imagen de Cocorná" },
-    { id: 5, content: cejaSaltoBuey1, alt: "Imagen de la Ceja" },
+    { id: 1, image: peñol1, alt: "Imagen de el peñol" },
+    { id: 2, image: carmen1, alt: "Imagen de el Carmen" },
+    { id: 3, image: ceja1, alt: "Imagen de la Ceja" },
+    { id: 4, image: cocorna1, alt: "Imagen de Cocorná" },
+    { id: 5, image: cejaSaltoBuey1, alt: "Imagen de la Ceja" },
   ];

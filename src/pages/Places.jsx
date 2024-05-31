@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
-import Title from "../components/TitleH2.js";
-import { mainGalery } from "../data/mainGaleryPlaces.js";
-import GaleryBigCopy from "../components/GaleryBig.js";
+import Title from "../components/TitleH2";
+import { mainGalery } from "../data/mainGaleryPlaces";
+import GaleryBigCopy from "../components/GaleryBig";
 
 function Places() {
   return (

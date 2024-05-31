@@ -5,13 +5,13 @@ function CardsGroup({ cardsArray }) {
   return (
     <CardsGroupWrap>
   
-        {cardsArray.map((card) => {
+        {cardsArray.map((i) => {
           return (
-            <div className="info-card" key={card.key}>
-              <img src={card.src} alt={card.alt} />
+            <div className="info-card" key={i.id}>
+              <img src={i.src} alt={i.alt} />
               <div>
-                <h3>{card.title}</h3>
-                <p>{card.content}</p>
+                <h3>{i.title}</h3>
+                <p>{i.content}</p>
               </div>
             </div>
           );

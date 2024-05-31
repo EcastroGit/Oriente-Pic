@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import Banner from "../components/Banner.js";
-import GaleryCarousel from "../components/GaleryCarousel.js";
-import BoxImageText from "../components/BoxImageText.js";
+import Banner from "../components/Banner";
+import Title from "../components/TitleH2";
+import GaleryCarousel from "../components/GaleryCarousel";
+import Cta from "../components/Cta";
+import BoxImageText from "../components/BoxImageText";
 import earth from "../assets/site/earth.webp";
 import Landscape from "../assets/site/section2-landscape.webp";
-import Spacer from "../components/Spacer.js";
+import Spacer from "../components/Spacer";
 import { imagesCarousel } from "../data/homeImagesCarousel";
 
 function Home() {
@@ -24,26 +26,32 @@ function Home() {
         <Banner />
       </section>
       <section>
+        <Title
+          title="Fotografías"
+          description="Aquí te presentamos algunos de 
+      los lugares más hermosos del Oriente Antioqueño."
+        />
         <GaleryCarousel imagesArray={imagesCarousel} />
+        <Cta id="home-galery-cta" text="Ver todas" link="/places" />
       </section>
       <Spacer pixels="50" />
       <section>
         <BoxImageText
           imgClassName="spin"
-          image={earth}
+          imageSrc={earth}
           alt="Ilustración de la tierra"
           title="Acciones que contribuyen a cuidar la casa común"
           text=" En la era actual, donde el cambio climático y la degradación ambiental
           se presentan como desafíos globales urgentes, el cuidado del planeta se
           ha convertido en una responsabilidad compartida por todos."
-          link="/social"
-          ctaLink="Conocer más"
+          ctaLink="/social"
+          ctaText="Conocer más"
         />
       </section>
       <section>
         <BoxImageText
           className=""
-          image={Landscape}
+          imageSrc={Landscape}
           alt="Fotografía del Oriente Antioqueño"
           title="El Oriente Antioqueño"
           text="EL oriente antioqueño es una zona geográfica de gran riqueza turística
@@ -51,8 +59,8 @@ function Home() {
           belleza natural. Existen 4 subregiones principales conformadas por
           Altiplano, Embalses, Bosques y Páramos; para un total de 23
           municipios."
-          link="/oriente-antioqueño"
-          ctaLink="Conocer más"
+          ctaLink="/oriente-antioqueño"
+          ctaText="Conocer más"
         />
       </section>
     </HomeWrap>

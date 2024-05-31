@@ -1,6 +1,5 @@
 import React from "react";
-
-
+import { PropTypes } from 'prop-types';
 
 function Spacer({pixels, backgroundColor}) {
     return(
@@ -9,5 +8,10 @@ function Spacer({pixels, backgroundColor}) {
         </div>
     )
 }
+
+Spacer.propTypes = {
+    pixels: PropTypes.number.isRequired,
+    backgroundColor: PropTypes.string
+  };
 
 export default Spacer;
