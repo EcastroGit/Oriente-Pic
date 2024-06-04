@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./App.css";
 import Header from "./components/SiteHeader";
 import Footer from "./components/SiteFooter";
@@ -15,8 +16,10 @@ import OrienteInfo from "./pages/OrienteInfo";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
+  const theme = useSelector((state) => state.theme.themeMode);
+
   return (
-    <div className="App">
+    <div className={`App ${theme === "dark" ? "dark" : "light"}`}>
       <Header />
 
       <Routes>

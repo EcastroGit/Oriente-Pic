@@ -1,9 +1,7 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
-
 .App {
   max-width: 1920px;
   margin: auto;
@@ -13,11 +11,18 @@
     sans-serif;
 }
 
+/* Theme Styles */
+
+.dark {
+  background-color: #1b1b1f;
+  color: white;
+}
+
 /* Animations for spinning elements */
+
 .spin {
   animation: rotate 150s linear infinite;
 }
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -48,10 +53,7 @@
   object-fit: cover;
   width: 500px;
 }
-
-/* Responsive design */
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .post {
     width: 90%;
     padding-bottom: 4rem;
@@ -60,7 +62,7 @@
     width: 400px;
   }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .post {
     width: 95%;
   }

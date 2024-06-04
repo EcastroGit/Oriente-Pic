@@ -7,7 +7,7 @@ function Cta2({ id, className, link, text }) {
     <Cta2Wrap id={id} className={className}>
       <Link to={link} rel="noopener noreferrer">
         {text}
-        <i class="bi bi-arrow-right" style={{ marginLeft: "5px" }}></i>
+        <i className="bi bi-arrow-right" style={{ marginLeft: "5px" }}></i>
       </Link>
     </Cta2Wrap>
   );

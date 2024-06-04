@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import ColorThemeToggler from "./ColorThemeToggler";
 
 function Header() {
   // State for the component
@@ -33,25 +34,30 @@ function Header() {
   //Return of the header component
   return (
     <HeaderWrap id="header">
-      <Link id="logo" to="/" rel="noopener noreferrer">
-        <h2>
-          Oriente <span>Pic</span>
-        </h2>
-      </Link>
-      <nav id="navigation" className={`links ${clicked ? "active" : ""}`}>
-        <Link onClick={handleClick} to="/places" rel="noopener noreferrer">
-          Lugares
+      <div id="logo-container">
+        <Link id="logo" to="/" rel="noopener noreferrer">
+          <h2>
+            Oriente <span>Pic</span>
+          </h2>
         </Link>
-        <Link onClick={handleClick} to="/social" rel="noopener noreferrer">
-          Social
-        </Link>
-        <Link onClick={handleClick} to="/blog" rel="noopener noreferrer">
-          Blog
-        </Link>
-        <Link onClick={handleClick} to="/about" rel="noopener noreferrer">
-          Acerca de
-        </Link>
-      </nav>
+      </div>
+      <div id="nav-container">
+        <nav id="navigation" className={`links ${clicked ? "active" : ""}`}>
+          <Link onClick={handleClick} to="/places" rel="noopener noreferrer">
+            Lugares
+          </Link>
+          <Link onClick={handleClick} to="/social" rel="noopener noreferrer">
+            Social
+          </Link>
+          <Link onClick={handleClick} to="/blog" rel="noopener noreferrer">
+            Blog
+          </Link>
+          <Link onClick={handleClick} to="/about" rel="noopener noreferrer">
+            Acerca de
+          </Link>
+        </nav>
+        <ColorThemeToggler />
+      </div>
       <div className="burguer">
         <BurguerButton clicked={clicked} handleClick={handleClick} />
       </div>
@@ -62,45 +68,46 @@ function Header() {
 
 export default Header;
 
+// Important: consider z-index for .links.active, .burguer and const BgDiv
 const HeaderWrap = styled.header`
-  height: 80px;
-  padding: 0.4rem;
-  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  nav {
-    padding-right: 4rem;
-  }
-
+  height: 70px;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #222224;
+  border-bottom: 2px solid #3a3a3f;
   a {
     text-decoration: none;
   }
-
   h2 {
-    color: white;
-    font-weight: 400;
     margin-left: 40px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
     span {
       font-weight: bold;
     }
   }
-
   h2:hover span {
     color: orangered;
   }
-
+  #nav-container {
+    display: flex;
+  }
   #navigation a {
+    margin-right: 1rem;
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
     will-change: filter;
     transition: color 700ms;
     &:hover {
       color: orangered;
     }
   }
-
+  nav {
+  }
   .links {
     position: absolute;
     top: -1500px;
@@ -130,7 +137,7 @@ const HeaderWrap = styled.header`
     width: 100%;
     display: block;
     position: absolute;
-    z-index: 3;
+    z-index: 7;
     margin-left: auto;
     margin-right: auto;
     top: 30%;
@@ -144,7 +151,7 @@ const HeaderWrap = styled.header`
     }
   }
   .burguer {
-    z-index: 2;
+    z-index: 7;
     @media (min-width: 768px) {
       display: none;
     }
@@ -161,7 +168,7 @@ const BgDiv = styled.div`
   left: -2500px;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 6;
   transition: all 0.6s ease;
 
   &.active {

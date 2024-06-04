@@ -41,10 +41,11 @@ export default Footer;
 const FooterWrap = styled.footer`
   display: flex;
   flex-flow: column nowrap;
-  background-color: #333;
+  background-color: #222224;
   color: white;
-  padding: 12px;
   height: fit-content;
+  padding: 12px;
+  border-top: 2px solid #3a3a3f;
 
   #footer-navigation {
     a {

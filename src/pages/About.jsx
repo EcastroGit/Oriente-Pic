@@ -49,11 +49,11 @@ function About() {
 export default About;
 
 const AboutWrap = styled.main`
+  padding-bottom: 14rem;
   #about {
-    width: 60%;
     height: auto;
+    width: 60%;
     margin: auto;
-    padding-bottom: 8rem;
     text-align: left;
     font-size: 1.2rem;
     @media screen and (max-width: 768px) {

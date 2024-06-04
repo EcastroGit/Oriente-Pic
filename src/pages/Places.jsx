@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Title from "../components/TitleH2";
 import { mainGalery } from "../data/mainGaleryPlaces";
-import GaleryBigCopy from "../components/GaleryBig";
+import GaleryBig from "../components/GaleryBig";
 
 function Places() {
   return (
@@ -21,7 +21,7 @@ function Places() {
       </section>
 
       <section>
-        <GaleryBigCopy imagesArray={mainGalery} />
+        <GaleryBig imagesArray={mainGalery} />
       </section>
     </PlacesWrap>
   );

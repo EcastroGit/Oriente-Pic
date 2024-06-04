@@ -1,22 +1,29 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 function CardsGroup({ cardsArray }) {
+  const theme = useSelector((state) => state.theme.themeMode);
+
   return (
     <CardsGroupWrap>
-  
-        {cardsArray.map((i) => {
-          return (
-            <div className="info-card" key={i.id}>
-              <img src={i.src} alt={i.alt} />
-              <div>
-                <h3>{i.title}</h3>
-                <p>{i.content}</p>
-              </div>
+      {cardsArray.map((i) => {
+        return (
+          <div
+            className="info-card"
+            key={i.id}
+            style={{
+              backgroundColor: `${theme === "dark" ? "#202127" : "white"}`,
+            }}
+          >
+            <img src={i.src} alt={i.alt} />
+            <div>
+              <h3>{i.title}</h3>
+              <p>{i.content}</p>
             </div>
-          );
-        })}
-     
+          </div>
+        );
+      })}
     </CardsGroupWrap>
   );
 }
@@ -34,14 +41,14 @@ const CardsGroupWrap = styled.div`
     width: 200px;
     height: 200px;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #585858;
     border-radius: 8px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     transition: transform 0.7s ease;
     &:hover {
       cursor: pointer;
       transform: scale(1.03);
-      box-shadow: 0px 0px 7px rgba(230, 50, 0, 0.6);
+      box-shadow: 0px 0px 7px #e6320099;
     }
     img {
       height: 45%;

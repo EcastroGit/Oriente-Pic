@@ -10,7 +10,7 @@ const ImageTextBox = ({
   title,
   text,
   ctaLink,
-  ctaText
+  ctaText,
 }) => {
   return (
     <BoxImageTextWrap className={className}>
@@ -20,7 +20,7 @@ const ImageTextBox = ({
 
       <div className="box-text">
         <h2>{title}</h2>
-        <br />  
+        <br />
         <p>{text}</p>
         <Cta2 link={ctaLink} text={ctaText} />
       </div>

@@ -1,16 +1,14 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-
-//Galery component
-function PlacesGalery({ imagesArray }) {
-  //Hooks to create state for the modal
+function PlacesGalery({ imagesArray, imgQuantity }) {
+  // Hooks to create state for the modal
   const [modal, setModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const [selectedTitle, setSelectedTitle] = useState("");
   const [selectedDescription, setSelectedDescription] = useState("");
 
-  //Function to handle the modal display
+  // Function to handle the modal display
   function handleModal(image, title, description) {
     setModal((prevModal) => !prevModal);
     setSelectedImage(image);
@@ -18,7 +16,7 @@ function PlacesGalery({ imagesArray }) {
     setSelectedDescription(description);
   }
 
-  //Function to create the Modal layer to expand images
+  // Function to create the Modal layer to expand images
   function Modal() {
     return (
       <ModalWrap style={{ display: modal ? "block" : "none" }}>
@@ -34,12 +32,11 @@ function PlacesGalery({ imagesArray }) {
     );
   }
 
-  //Return of the general Galery component
+  // Return the HTML galery component
   return (
     <GaleryWrap>
-      {
-        imagesArray.map((i) => {
-          return(
+      {imagesArray.slice(0, imgQuantity).map((i) => {
+        return (
           <div key={i.id}>
             <img
               src={i.image}
@@ -51,9 +48,8 @@ function PlacesGalery({ imagesArray }) {
               <p>{i.description}</p>
             </div>
           </div>
-          )
-        })
-      }
+        );
+      })}
       <Modal />
     </GaleryWrap>
   );
@@ -69,18 +65,15 @@ const GaleryWrap = styled.div`
   width: 100%;
   height: fit-content;
   margin: auto;
-
   img {
     width: 400px;
     object-fit: cover;
     height: 250px;
     margin: 15px 15px 15px;
     transition: transform 0.7s ease;
-
     @media screen and (max-width: 768px) {
       max-width: 300px;
     }
-
     &:hover {
       cursor: pointer;
       transform: scale(1.05);
@@ -88,6 +81,7 @@ const GaleryWrap = styled.div`
     }
   }
 `;
+
 // Styles for Modal component
 const ModalWrap = styled.div`
   position: fixed;
@@ -98,12 +92,10 @@ const ModalWrap = styled.div`
   width: 100%;
   height: 100%;
   display: none;
-
   #close-tag {
     text-align: right;
     padding: 25px;
   }
-
   i {
     font-size: 30px;
     &:hover {
@@ -111,21 +103,17 @@ const ModalWrap = styled.div`
       cursor: pointer;
     }
   }
-
   #image-container {
     margin: 10px auto 10px;
     width: fit-content;
     max-width: 700px;
-
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
-
       @media screen and (max-width: 768px) {
         width: 600px;
       }
-
       @media screen and (max-width: 450px) {
         width: 100%;
       }

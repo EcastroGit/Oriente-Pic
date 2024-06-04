@@ -97,3 +97,11 @@ export const mainGalery = [
     alt: "San Rafael, Antioquia"
   }
 ];
+
+function findImageIndexById(id) {
+  return mainGalery.findIndex(item => item.id === id);
+}
+
+// Ejemplo de uso
+const index = findImageIndexById('img5');
+console.log(index); 

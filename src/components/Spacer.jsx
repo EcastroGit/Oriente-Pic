@@ -10,7 +10,7 @@ function Spacer({pixels, backgroundColor}) {
 }
 
 Spacer.propTypes = {
-    pixels: PropTypes.number.isRequired,
+    pixels: PropTypes.string.isRequired,
     backgroundColor: PropTypes.string
   };
 

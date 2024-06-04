@@ -13,7 +13,7 @@ function Cta({ id, className, link, text }) {
 export default Cta;
 
 const StyledLink = styled(Link)`
-  background-color: red;
+  background-color: transparent;
   color: white;
   font-size: 1.2rem;
   height: 50px;
@@ -24,11 +24,13 @@ const StyledLink = styled(Link)`
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 25px;
+  border: 2px solid white;
   text-decoration: none;
   transition: background-color 500ms, color 500ms;
 
   &:hover {
-    background-color: #ff7f27;
     cursor: pointer;
+    color: red;
+    border: 2px solid red;
   }
 `;

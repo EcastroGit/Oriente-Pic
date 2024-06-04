@@ -56,7 +56,7 @@ const Carousel = styled.div`
   }
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: #5e5c5c;
     font-size: 30px;
   }
   img {

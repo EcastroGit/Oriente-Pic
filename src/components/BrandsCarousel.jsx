@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Title from "./TitleH2";
 import Spacer from "./Spacer";
 
-const BrandsCarousel = ({title, cardsArray}) => {
+const BrandsCarousel = ({ title, cardsArray }) => {
   const settings = {
     dots: false,
     slidesToShow: 4,
@@ -45,23 +45,17 @@ const BrandsCarousel = ({title, cardsArray}) => {
     ],
   };
 
-
-
   return (
     <Carousel className="carousel">
-      <Title
-        title={title}
-        description=""
-      />
+      <Title title={title} description="" />
       <Spacer pixels="20" />
       <Slider {...settings}>
         {cardsArray.map((i) => (
           <div key={i.id} className="card">
-            <img
-              src={i.image}
-              alt={i.alt}
-            ></img>
-            <p style={{fontWeight:"bold", padding:"5px 0 5px"}}>{i.title}</p>
+            <img src={i.image} alt={i.alt}></img>
+            <p style={{ fontWeight: "bold", padding: "5px 0 5px" }}>
+              {i.title}
+            </p>
           </div>
         ))}
       </Slider>
@@ -82,8 +76,8 @@ const Carousel = styled.div`
   }
   .slick-prev:before,
   .slick-next:before {
-    color: black; /* Cambia este valor al color que desees */
-    font-size: 30px; /* Ajusta el tamaño del icono si es necesario */
+    color: #5e5c5c;
+    font-size: 30px;
   }
   img {
     width: 100px;

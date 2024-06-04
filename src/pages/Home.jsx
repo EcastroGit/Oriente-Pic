@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet";
+import styled from "styled-components";
 import Banner from "../components/Banner";
 import Title from "../components/TitleH2";
 import GaleryCarousel from "../components/GaleryCarousel";
@@ -12,6 +13,8 @@ import Spacer from "../components/Spacer";
 import { imagesCarousel } from "../data/homeImagesCarousel";
 
 function Home() {
+  const theme = useSelector((state) => state.theme.themeMode);
+
   return (
     <HomeWrap id="home">
       <Helmet>
@@ -25,6 +28,7 @@ function Home() {
       <section>
         <Banner />
       </section>
+
       <section>
         <Title
           title="Fotografías"
@@ -34,8 +38,14 @@ function Home() {
         <GaleryCarousel imagesArray={imagesCarousel} />
         <Cta id="home-galery-cta" text="Ver todas" link="/places" />
       </section>
+
       <Spacer pixels="50" />
-      <section>
+
+      <section
+        style={{
+          backgroundColor: `${theme === "dark" ? "#202127" : "#d3d3d3"}`,
+        }}
+      >
         <BoxImageText
           imgClassName="spin"
           imageSrc={earth}
@@ -48,6 +58,7 @@ function Home() {
           ctaText="Conocer más"
         />
       </section>
+
       <section>
         <BoxImageText
           className=""

@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet";
+import styled from "styled-components";
 import Title from "../components/TitleH2";
 import ResponsiveImage from "../components/ResponsiveImage30";
 import earth from "../assets/site/earth.webp";
@@ -12,6 +13,8 @@ import sustainability from "../assets/site/sustainability.webp";
 import { accionesResponsables } from "../data/iconsCarousel";
 
 function Social() {
+  const theme = useSelector((state) => state.theme.themeMode);
+
   return (
     <SocialWrap id="social">
       <Helmet>
@@ -44,14 +47,23 @@ function Social() {
         crucial en la preservación de nuestro entorno natural."
           textAlign="left"
         />
+        <Spacer pixels="60" />
       </section>
-      <section>
+
+      <section
+        style={{
+          backgroundColor: `${theme === "dark" ? "#202127" : "#d3d3d3"}`,
+        }}
+      >
         <BrandsCarousel
           title="Acciones responsables"
           cardsArray={accionesResponsables}
         />
+        <Spacer pixels="60" />
       </section>
+
       <Spacer pixels="50" />
+
       <section>
         <BoxImageText
           imageSrc={sustainability}

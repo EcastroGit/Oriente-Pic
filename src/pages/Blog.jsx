@@ -1,11 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 import Title from "../components/TitleH2";
 import { posts } from "../data/blogFeedCards";
 
 function Blog() {
+  const theme = useSelector((state) => state.theme.themeMode);
+
   return (
     <BlogWrap>
       <Helmet>
@@ -26,8 +29,17 @@ function Blog() {
       <section>
         <div id="posts">
           {posts.map((post) => (
-            <div key={post.key} className="post-card">
-              <Link to={`/blog/${post.slug}`}>
+            <div
+              key={post.key}
+              className="post-card"
+              style={{
+                backgroundColor: `${theme === "dark" ? "#202127" : "white"}`,
+              }}
+            >
+              <Link
+                to={`/blog/${post.slug}`}
+                style={{ color: `${theme === "dark" ? "white" : "black"}` }}
+              >
                 <div id="post-image">
                   <img src={post.image} alt="Portada de blog" />
                 </div>
@@ -50,7 +62,7 @@ export default Blog;
 
 const BlogWrap = styled.main`
   width: 100%;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 
   #posts {
     display: flex;
@@ -67,7 +79,7 @@ const BlogWrap = styled.main`
     width: 250px;
     height: 320px;
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #585858;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -75,7 +87,7 @@ const BlogWrap = styled.main`
     &:hover {
       cursor: pointer;
       transform: scale(1.03);
-      box-shadow: 0px 0px 7px rgba(230, 50, 0, 0.6);
+      box-shadow: 0px 0px 7px #e6320099;
     }
 
     #post-image {
